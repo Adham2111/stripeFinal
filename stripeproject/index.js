@@ -18,10 +18,10 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
  
 app.get('/', function(req, res){
-    res.render('Home', {
+    return res.render('Home', {
     key: Publishable_Key
     })
-    return res.send(200)
+   
 })
  
 app.post('/payment', function(req, res){
