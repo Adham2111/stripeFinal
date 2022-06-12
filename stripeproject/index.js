@@ -21,6 +21,7 @@ app.get('/', function(req, res){
     res.render('Home', {
     key: Publishable_Key
     })
+    return res.send(200)
 })
  
 app.post('/payment', function(req, res){
